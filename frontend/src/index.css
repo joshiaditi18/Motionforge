@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MOTIONFORGE — Theme Token System
+   Driven by data-theme attribute on <html>
+   Default = dark (applied before React mounts via ThemeContext)
+   ============================================================ */
+
+/* --- Dark Theme (default) --- */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg-page:        #030712;   /* slate-950 */
+  --bg-sidebar:     #030712;
+  --bg-header:      rgba(3, 7, 18, 0.92);
+  --bg-card:        rgba(15, 23, 42, 0.85);    /* slate-900/85 */
+  --bg-card-alt:    rgba(15, 23, 42, 0.60);
+  --bg-input:       #030712;
+  --bg-inset:       rgba(2, 6, 23, 0.70);
+  --bg-hover:       rgba(30, 41, 59, 0.70);
+
+  /* Borders */
+  --border-default: rgba(30, 41, 59, 0.80);   /* slate-800/80 */
+  --border-subtle:  rgba(15, 23, 42, 0.90);
+  --border-strong:  rgba(51, 65, 85, 0.60);
+
+  /* Text */
+  --text-primary:   #f8fafc;   /* slate-50 */
+  --text-secondary: #cbd5e1;   /* slate-300 */
+  --text-muted:     #64748b;   /* slate-500 */
+  --text-faint:     #475569;   /* slate-600 */
+
+  /* Accent (teal/cyan) */
+  --accent:         #22d3ee;   /* cyan-400 */
+  --accent-hover:   #06b6d4;   /* cyan-500 */
+  --accent-bg:      rgba(34, 211, 238, 0.10);
+  --accent-border:  rgba(34, 211, 238, 0.25);
+  --accent-text:    #67e8f9;   /* cyan-300 */
+
+  /* Status */
+  --success-text:   #34d399;
+  --success-bg:     rgba(52, 211, 153, 0.12);
+  --success-border: rgba(52, 211, 153, 0.25);
+  --warning-text:   #fbbf24;
+  --warning-bg:     rgba(251, 191, 36, 0.12);
+  --warning-border: rgba(251, 191, 36, 0.25);
+  --error-text:     #fb7185;
+  --error-bg:       rgba(251, 113, 133, 0.12);
+  --error-border:   rgba(251, 113, 133, 0.25);
+
+  /* Viewport */
+  --viewport-bg:    #070b13;
+  --grid-primary:   #0284c7;
+  --grid-secondary: #1e293b;
+
+  /* Scrollbars */
+  --scrollbar-track: #0f172a;
+  --scrollbar-thumb: #334155;
+  --scrollbar-hover: #475569;
+}
+
+/* --- Light Theme --- */
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Surfaces */
+  --bg-page:        #f1f5f9;   /* slate-100 */
+  --bg-sidebar:     #f8fafc;   /* slate-50 */
+  --bg-header:      rgba(248, 250, 252, 0.95);
+  --bg-card:        rgba(255, 255, 255, 0.95);
+  --bg-card-alt:    rgba(248, 250, 252, 0.90);
+  --bg-input:       #ffffff;
+  --bg-inset:       rgba(241, 245, 249, 0.90);
+  --bg-hover:       rgba(226, 232, 240, 0.70);
+
+  /* Borders */
+  --border-default: rgba(203, 213, 225, 0.80);  /* slate-300/80 */
+  --border-subtle:  rgba(226, 232, 240, 0.90);  /* slate-200/90 */
+  --border-strong:  rgba(148, 163, 184, 0.60);  /* slate-400/60 */
+
+  /* Text */
+  --text-primary:   #0f172a;   /* slate-900 */
+  --text-secondary: #334155;   /* slate-700 */
+  --text-muted:     #64748b;   /* slate-500 */
+  --text-faint:     #94a3b8;   /* slate-400 */
+
+  /* Accent (teal/cyan — slightly deeper for light bg readability) */
+  --accent:         #0891b2;   /* cyan-600 */
+  --accent-hover:   #0e7490;   /* cyan-700 */
+  --accent-bg:      rgba(8, 145, 178, 0.08);
+  --accent-border:  rgba(8, 145, 178, 0.25);
+  --accent-text:    #0e7490;   /* cyan-700 */
+
+  /* Status */
+  --success-text:   #059669;
+  --success-bg:     rgba(5, 150, 105, 0.08);
+  --success-border: rgba(5, 150, 105, 0.25);
+  --warning-text:   #d97706;
+  --warning-bg:     rgba(217, 119, 6, 0.08);
+  --warning-border: rgba(217, 119, 6, 0.25);
+  --error-text:     #e11d48;
+  --error-bg:       rgba(225, 29, 72, 0.08);
+  --error-border:   rgba(225, 29, 72, 0.25);
+
+  /* Viewport */
+  --viewport-bg:    #e2e8f0;
+  --grid-primary:   #0891b2;
+  --grid-secondary: #cbd5e1;
+
+  /* Scrollbars */
+  --scrollbar-track: #e2e8f0;
+  --scrollbar-thumb: #94a3b8;
+  --scrollbar-hover: #64748b;
+}
+
+/* ============================================================
+   Global base styles driven by tokens
+   ============================================================ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Prevent layout shift when theme applied inline before mount */
+html { background-color: var(--bg-page); }
+
+/* Custom scrollbars */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb  { background: var(--scrollbar-thumb); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
+
+/* Selection */
+::selection { background: rgba(34, 211, 238, 0.25); color: var(--accent-text); }
+
+/* ============================================================
+   Tailwind v4 custom utility aliases via @layer
+   These let us write theme-aware Tailwind classes cleanly.
+   ============================================================ */
+@layer utilities {
+  .bg-theme-page      { background-color: var(--bg-page); }
+  .bg-theme-sidebar   { background-color: var(--bg-sidebar); }
+  .bg-theme-header    { background-color: var(--bg-header); }
+  .bg-theme-card      { background-color: var(--bg-card); }
+  .bg-theme-card-alt  { background-color: var(--bg-card-alt); }
+  .bg-theme-input     { background-color: var(--bg-input); }
+  .bg-theme-inset     { background-color: var(--bg-inset); }
+  .bg-theme-hover     { background-color: var(--bg-hover); }
+
+  .border-theme       { border-color: var(--border-default); }
+  .border-theme-sub   { border-color: var(--border-subtle); }
+  .border-theme-strong{ border-color: var(--border-strong); }
+
+  .text-theme-primary  { color: var(--text-primary); }
+  .text-theme-secondary{ color: var(--text-secondary); }
+  .text-theme-muted    { color: var(--text-muted); }
+  .text-theme-faint    { color: var(--text-faint); }
+
+  .text-theme-accent   { color: var(--accent-text); }
+  .bg-theme-accent     { background-color: var(--accent-bg); }
+  .border-theme-accent { border-color: var(--accent-border); }
+
+  .text-theme-success  { color: var(--success-text); }
+  .bg-theme-success    { background-color: var(--success-bg); }
+  .border-theme-success{ border-color: var(--success-border); }
+
+  .text-theme-warning  { color: var(--warning-text); }
+  .bg-theme-warning    { background-color: var(--warning-bg); }
+  .border-theme-warning{ border-color: var(--warning-border); }
+
+  .text-theme-error    { color: var(--error-text); }
+  .bg-theme-error      { background-color: var(--error-bg); }
+  .border-theme-error  { border-color: var(--error-border); }
+}

@@ -1,0 +1,2089 @@
+{
+  "timestamp": "2026-10-15 18:24:43",
+  "benchmark_duration_seconds": 68.58,
+  "motions_evaluated": [
+    "MF001",
+    "MF002",
+    "MF003"
+  ],
+  "task1_denoising": {
+    "baseline_savgol": [
+      {
+        "motion_id": "MF001",
+        "noise_level": "LOW",
+        "method": "baseline_savgol",
+        "score": 58.94,
+        "status": "VALID",
+        "runtime_ms": 40.5,
+        "metrics": {
+          "mpjpe": 0.140717,
+          "velocity_error": 13.436476,
+          "acceleration_error": 2039.587259,
+          "jitter": 2039.5873,
+          "motion_preservation": 0.611617,
+          "raw_mpjpe": 0.204332,
+          "raw_jitter": 7575.7577,
+          "mpjpe_improvement_pct": 31.13,
+          "jitter_reduction_pct": 73.08
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "noise_level": "MEDIUM",
+        "method": "baseline_savgol",
+        "score": 39.64,
+        "status": "VALID",
+        "runtime_ms": 57.52,
+        "metrics": {
+          "mpjpe": 0.34407,
+          "velocity_error": 21.016505,
+          "acceleration_error": 2824.320669,
+          "jitter": 2824.3207,
+          "motion_preservation": 0.575719,
+          "raw_mpjpe": 0.662192,
+          "raw_jitter": 25624.9445,
+          "mpjpe_improvement_pct": 48.04,
+          "jitter_reduction_pct": 88.98
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "noise_level": "HIGH",
+        "method": "baseline_savgol",
+        "score": 22.72,
+        "status": "VALID",
+        "runtime_ms": 46.73,
+        "metrics": {
+          "mpjpe": 0.620638,
+          "velocity_error": 30.246048,
+          "acceleration_error": 4210.608766,
+          "jitter": 4210.6088,
+          "motion_preservation": 0.74596,
+          "raw_mpjpe": 1.604505,
+          "raw_jitter": 59151.5925,
+          "mpjpe_improvement_pct": 61.32,
+          "jitter_reduction_pct": 92.88
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "LOW",
+        "method": "baseline_savgol",
+        "score": 60.85,
+        "status": "VALID",
+        "runtime_ms": 49.76,
+        "metrics": {
+          "mpjpe": 0.131685,
+          "velocity_error": 12.594647,
+          "acceleration_error": 1927.086314,
+          "jitter": 1927.0863,
+          "motion_preservation": 0.640204,
+          "raw_mpjpe": 0.199636,
+          "raw_jitter": 7534.0798,
+          "mpjpe_improvement_pct": 34.04,
+          "jitter_reduction_pct": 74.42
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "MEDIUM",
+        "method": "baseline_savgol",
+        "score": 38.97,
+        "status": "VALID",
+        "runtime_ms": 59.97,
+        "metrics": {
+          "mpjpe": 0.352634,
+          "velocity_error": 20.937046,
+          "acceleration_error": 2915.281639,
+          "jitter": 2915.2816,
+          "motion_preservation": 0.71524,
+          "raw_mpjpe": 0.679339,
+          "raw_jitter": 25912.5481,
+          "mpjpe_improvement_pct": 48.09,
+          "jitter_reduction_pct": 88.75
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "HIGH",
+        "method": "baseline_savgol",
+        "score": 17.07,
+        "status": "VALID",
+        "runtime_ms": 87.08,
+        "metrics": {
+          "mpjpe": 0.75577,
+          "velocity_error": 34.822051,
+          "acceleration_error": 5023.775708,
+          "jitter": 5023.7757,
+          "motion_preservation": 1.398128,
+          "raw_mpjpe": 1.81269,
+          "raw_jitter": 72147.6587,
+          "mpjpe_improvement_pct": 58.31,
+          "jitter_reduction_pct": 93.04
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "LOW",
+        "method": "baseline_savgol",
+        "score": 56.88,
+        "status": "VALID",
+        "runtime_ms": 52.21,
+        "metrics": {
+          "mpjpe": 0.140557,
+          "velocity_error": 14.402157,
+          "acceleration_error": 2275.935032,
+          "jitter": 2275.935,
+          "motion_preservation": 0.648196,
+          "raw_mpjpe": 0.195154,
+          "raw_jitter": 7331.9568,
+          "mpjpe_improvement_pct": 27.98,
+          "jitter_reduction_pct": 68.96
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "MEDIUM",
+        "method": "baseline_savgol",
+        "score": 36.59,
+        "status": "VALID",
+        "runtime_ms": 45.69,
+        "metrics": {
+          "mpjpe": 0.369498,
+          "velocity_error": 22.701411,
+          "acceleration_error": 3136.370412,
+          "jitter": 3136.3704,
+          "motion_preservation": 0.578013,
+          "raw_mpjpe": 0.689822,
+          "raw_jitter": 25231.7412,
+          "mpjpe_improvement_pct": 46.44,
+          "jitter_reduction_pct": 87.57
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "HIGH",
+        "method": "baseline_savgol",
+        "score": 14.15,
+        "status": "VALID",
+        "runtime_ms": 56.95,
+        "metrics": {
+          "mpjpe": 0.827997,
+          "velocity_error": 39.453162,
+          "acceleration_error": 5518.737943,
+          "jitter": 5518.7379,
+          "motion_preservation": 0.902922,
+          "raw_mpjpe": 1.87864,
+          "raw_jitter": 72113.681,
+          "mpjpe_improvement_pct": 55.93,
+          "jitter_reduction_pct": 92.35
+        }
+      }
+    ],
+    "butterworth": [
+      {
+        "motion_id": "MF001",
+        "noise_level": "LOW",
+        "method": "butterworth",
+        "score": 75.67,
+        "status": "VALID",
+        "runtime_ms": 28.54,
+        "metrics": {
+          "mpjpe": 0.110389,
+          "velocity_error": 6.919224,
+          "acceleration_error": 696.527962,
+          "jitter": 696.528,
+          "motion_preservation": 0.57705,
+          "raw_mpjpe": 0.204332,
+          "raw_jitter": 7575.7577,
+          "mpjpe_improvement_pct": 45.98,
+          "jitter_reduction_pct": 90.81
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "noise_level": "MEDIUM",
+        "method": "butterworth",
+        "score": 58.66,
+        "status": "VALID",
+        "runtime_ms": 24.81,
+        "metrics": {
+          "mpjpe": 0.28911,
+          "velocity_error": 11.062237,
+          "acceleration_error": 762.568679,
+          "jitter": 762.5687,
+          "motion_preservation": 0.517901,
+          "raw_mpjpe": 0.662192,
+          "raw_jitter": 25624.9445,
+          "mpjpe_improvement_pct": 56.34,
+          "jitter_reduction_pct": 97.02
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "noise_level": "HIGH",
+        "method": "butterworth",
+        "score": 46.16,
+        "status": "VALID",
+        "runtime_ms": 28.44,
+        "metrics": {
+          "mpjpe": 0.501422,
+          "velocity_error": 12.379118,
+          "acceleration_error": 685.077197,
+          "jitter": 685.0772,
+          "motion_preservation": 0.473605,
+          "raw_mpjpe": 1.604505,
+          "raw_jitter": 59151.5925,
+          "mpjpe_improvement_pct": 68.75,
+          "jitter_reduction_pct": 98.84
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "LOW",
+        "method": "butterworth",
+        "score": 78.54,
+        "status": "VALID",
+        "runtime_ms": 41.84,
+        "metrics": {
+          "mpjpe": 0.099389,
+          "velocity_error": 5.811609,
+          "acceleration_error": 587.014944,
+          "jitter": 587.0149,
+          "motion_preservation": 0.529918,
+          "raw_mpjpe": 0.199636,
+          "raw_jitter": 7534.0798,
+          "mpjpe_improvement_pct": 50.21,
+          "jitter_reduction_pct": 92.21
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "MEDIUM",
+        "method": "butterworth",
+        "score": 59.75,
+        "status": "VALID",
+        "runtime_ms": 62.05,
+        "metrics": {
+          "mpjpe": 0.292515,
+          "velocity_error": 10.068719,
+          "acceleration_error": 669.816042,
+          "jitter": 669.816,
+          "motion_preservation": 0.50136,
+          "raw_mpjpe": 0.679339,
+          "raw_jitter": 25912.5481,
+          "mpjpe_improvement_pct": 56.94,
+          "jitter_reduction_pct": 97.42
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "HIGH",
+        "method": "butterworth",
+        "score": 41.27,
+        "status": "VALID",
+        "runtime_ms": 66.48,
+        "metrics": {
+          "mpjpe": 0.607726,
+          "velocity_error": 12.620709,
+          "acceleration_error": 620.467587,
+          "jitter": 620.4676,
+          "motion_preservation": 0.44587,
+          "raw_mpjpe": 1.81269,
+          "raw_jitter": 72147.6587,
+          "mpjpe_improvement_pct": 66.47,
+          "jitter_reduction_pct": 99.14
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "LOW",
+        "method": "butterworth",
+        "score": 71.07,
+        "status": "VALID",
+        "runtime_ms": 29.81,
+        "metrics": {
+          "mpjpe": 0.115863,
+          "velocity_error": 8.58907,
+          "acceleration_error": 1052.607227,
+          "jitter": 1052.6072,
+          "motion_preservation": 0.622493,
+          "raw_mpjpe": 0.195154,
+          "raw_jitter": 7331.9568,
+          "mpjpe_improvement_pct": 40.63,
+          "jitter_reduction_pct": 85.64
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "MEDIUM",
+        "method": "butterworth",
+        "score": 53.61,
+        "status": "VALID",
+        "runtime_ms": 31.51,
+        "metrics": {
+          "mpjpe": 0.322867,
+          "velocity_error": 12.686975,
+          "acceleration_error": 1090.54143,
+          "jitter": 1090.5414,
+          "motion_preservation": 0.561226,
+          "raw_mpjpe": 0.689822,
+          "raw_jitter": 25231.7412,
+          "mpjpe_improvement_pct": 53.2,
+          "jitter_reduction_pct": 95.68
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "HIGH",
+        "method": "butterworth",
+        "score": 34.41,
+        "status": "VALID",
+        "runtime_ms": 65.76,
+        "metrics": {
+          "mpjpe": 0.684546,
+          "velocity_error": 16.799144,
+          "acceleration_error": 1066.464312,
+          "jitter": 1066.4643,
+          "motion_preservation": 0.520486,
+          "raw_mpjpe": 1.87864,
+          "raw_jitter": 72113.681,
+          "mpjpe_improvement_pct": 63.56,
+          "jitter_reduction_pct": 98.52
+        }
+      }
+    ],
+    "gaussian": [
+      {
+        "motion_id": "MF001",
+        "noise_level": "LOW",
+        "method": "gaussian",
+        "score": 65.61,
+        "status": "VALID",
+        "runtime_ms": 21.93,
+        "metrics": {
+          "mpjpe": 0.125187,
+          "velocity_error": 11.13156,
+          "acceleration_error": 1424.339712,
+          "jitter": 1424.3397,
+          "motion_preservation": 0.53474,
+          "raw_mpjpe": 0.204332,
+          "raw_jitter": 7575.7577,
+          "mpjpe_improvement_pct": 38.73,
+          "jitter_reduction_pct": 81.2
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "noise_level": "MEDIUM",
+        "method": "gaussian",
+        "score": 50.61,
+        "status": "VALID",
+        "runtime_ms": 24.25,
+        "metrics": {
+          "mpjpe": 0.31108,
+          "velocity_error": 16.11002,
+          "acceleration_error": 1347.665545,
+          "jitter": 1347.6655,
+          "motion_preservation": 0.508154,
+          "raw_mpjpe": 0.662192,
+          "raw_jitter": 25624.9445,
+          "mpjpe_improvement_pct": 53.02,
+          "jitter_reduction_pct": 94.74
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "noise_level": "HIGH",
+        "method": "gaussian",
+        "score": 36.83,
+        "status": "VALID",
+        "runtime_ms": 22.67,
+        "metrics": {
+          "mpjpe": 0.560783,
+          "velocity_error": 20.317024,
+          "acceleration_error": 1265.362817,
+          "jitter": 1265.3628,
+          "motion_preservation": 0.52569,
+          "raw_mpjpe": 1.604505,
+          "raw_jitter": 59151.5925,
+          "mpjpe_improvement_pct": 65.05,
+          "jitter_reduction_pct": 97.86
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "LOW",
+        "method": "gaussian",
+        "score": 67.79,
+        "status": "VALID",
+        "runtime_ms": 35.09,
+        "metrics": {
+          "mpjpe": 0.116215,
+          "velocity_error": 10.214988,
+          "acceleration_error": 1313.898175,
+          "jitter": 1313.8982,
+          "motion_preservation": 0.538708,
+          "raw_mpjpe": 0.199636,
+          "raw_jitter": 7534.0798,
+          "mpjpe_improvement_pct": 41.79,
+          "jitter_reduction_pct": 82.56
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "MEDIUM",
+        "method": "gaussian",
+        "score": 50.71,
+        "status": "VALID",
+        "runtime_ms": 145.94,
+        "metrics": {
+          "mpjpe": 0.317259,
+          "velocity_error": 15.616327,
+          "acceleration_error": 1326.359706,
+          "jitter": 1326.3597,
+          "motion_preservation": 0.566134,
+          "raw_mpjpe": 0.679339,
+          "raw_jitter": 25912.5481,
+          "mpjpe_improvement_pct": 53.3,
+          "jitter_reduction_pct": 94.88
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "HIGH",
+        "method": "gaussian",
+        "score": 31.71,
+        "status": "VALID",
+        "runtime_ms": 40.53,
+        "metrics": {
+          "mpjpe": 0.67552,
+          "velocity_error": 22.133499,
+          "acceleration_error": 1279.365113,
+          "jitter": 1279.3651,
+          "motion_preservation": 0.716548,
+          "raw_mpjpe": 1.81269,
+          "raw_jitter": 72147.6587,
+          "mpjpe_improvement_pct": 62.73,
+          "jitter_reduction_pct": 98.23
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "LOW",
+        "method": "gaussian",
+        "score": 63.81,
+        "status": "VALID",
+        "runtime_ms": 31.44,
+        "metrics": {
+          "mpjpe": 0.124737,
+          "velocity_error": 11.754965,
+          "acceleration_error": 1630.355692,
+          "jitter": 1630.3557,
+          "motion_preservation": 0.586586,
+          "raw_mpjpe": 0.195154,
+          "raw_jitter": 7331.9568,
+          "mpjpe_improvement_pct": 36.08,
+          "jitter_reduction_pct": 77.76
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "MEDIUM",
+        "method": "gaussian",
+        "score": 46.54,
+        "status": "VALID",
+        "runtime_ms": 36.92,
+        "metrics": {
+          "mpjpe": 0.339554,
+          "velocity_error": 17.70396,
+          "acceleration_error": 1677.434203,
+          "jitter": 1677.4342,
+          "motion_preservation": 0.536276,
+          "raw_mpjpe": 0.689822,
+          "raw_jitter": 25231.7412,
+          "mpjpe_improvement_pct": 50.78,
+          "jitter_reduction_pct": 93.35
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "HIGH",
+        "method": "gaussian",
+        "score": 27.13,
+        "status": "VALID",
+        "runtime_ms": 31.0,
+        "metrics": {
+          "mpjpe": 0.74966,
+          "velocity_error": 24.939584,
+          "acceleration_error": 1676.133594,
+          "jitter": 1676.1336,
+          "motion_preservation": 0.594054,
+          "raw_mpjpe": 1.87864,
+          "raw_jitter": 72113.681,
+          "mpjpe_improvement_pct": 60.1,
+          "jitter_reduction_pct": 97.68
+        }
+      }
+    ],
+    "adaptive_savgol": [
+      {
+        "motion_id": "MF001",
+        "noise_level": "LOW",
+        "method": "adaptive_savgol",
+        "score": 58.27,
+        "status": "VALID",
+        "runtime_ms": 30.9,
+        "metrics": {
+          "mpjpe": 0.145403,
+          "velocity_error": 13.75016,
+          "acceleration_error": 2063.031701,
+          "jitter": 2063.0317,
+          "motion_preservation": 0.484371,
+          "raw_mpjpe": 0.204332,
+          "raw_jitter": 7575.7577,
+          "mpjpe_improvement_pct": 28.84,
+          "jitter_reduction_pct": 72.77
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "noise_level": "MEDIUM",
+        "method": "adaptive_savgol",
+        "score": 39.36,
+        "status": "VALID",
+        "runtime_ms": 34.88,
+        "metrics": {
+          "mpjpe": 0.344898,
+          "velocity_error": 21.000226,
+          "acceleration_error": 2889.228599,
+          "jitter": 2889.2286,
+          "motion_preservation": 0.555319,
+          "raw_mpjpe": 0.662192,
+          "raw_jitter": 25624.9445,
+          "mpjpe_improvement_pct": 47.92,
+          "jitter_reduction_pct": 88.72
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "noise_level": "HIGH",
+        "method": "adaptive_savgol",
+        "score": 22.15,
+        "status": "VALID",
+        "runtime_ms": 39.31,
+        "metrics": {
+          "mpjpe": 0.623328,
+          "velocity_error": 30.586361,
+          "acceleration_error": 4396.266421,
+          "jitter": 4396.2664,
+          "motion_preservation": 0.748303,
+          "raw_mpjpe": 1.604505,
+          "raw_jitter": 59151.5925,
+          "mpjpe_improvement_pct": 61.15,
+          "jitter_reduction_pct": 92.57
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "LOW",
+        "method": "adaptive_savgol",
+        "score": 60.34,
+        "status": "VALID",
+        "runtime_ms": 49.05,
+        "metrics": {
+          "mpjpe": 0.13471,
+          "velocity_error": 12.844959,
+          "acceleration_error": 1947.150827,
+          "jitter": 1947.1508,
+          "motion_preservation": 0.514597,
+          "raw_mpjpe": 0.199636,
+          "raw_jitter": 7534.0798,
+          "mpjpe_improvement_pct": 32.52,
+          "jitter_reduction_pct": 74.16
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "MEDIUM",
+        "method": "adaptive_savgol",
+        "score": 38.78,
+        "status": "VALID",
+        "runtime_ms": 37.1,
+        "metrics": {
+          "mpjpe": 0.352755,
+          "velocity_error": 20.857011,
+          "acceleration_error": 2974.13229,
+          "jitter": 2974.1323,
+          "motion_preservation": 0.694296,
+          "raw_mpjpe": 0.679339,
+          "raw_jitter": 25912.5481,
+          "mpjpe_improvement_pct": 48.07,
+          "jitter_reduction_pct": 88.52
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "noise_level": "HIGH",
+        "method": "adaptive_savgol",
+        "score": 16.92,
+        "status": "VALID",
+        "runtime_ms": 43.61,
+        "metrics": {
+          "mpjpe": 0.75097,
+          "velocity_error": 34.973372,
+          "acceleration_error": 5145.661341,
+          "jitter": 5145.6613,
+          "motion_preservation": 1.405498,
+          "raw_mpjpe": 1.81269,
+          "raw_jitter": 72147.6587,
+          "mpjpe_improvement_pct": 58.57,
+          "jitter_reduction_pct": 92.87
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "LOW",
+        "method": "adaptive_savgol",
+        "score": 55.68,
+        "status": "VALID",
+        "runtime_ms": 33.78,
+        "metrics": {
+          "mpjpe": 0.146686,
+          "velocity_error": 14.990031,
+          "acceleration_error": 2347.783627,
+          "jitter": 2347.7836,
+          "motion_preservation": 0.542283,
+          "raw_mpjpe": 0.195154,
+          "raw_jitter": 7331.9568,
+          "mpjpe_improvement_pct": 24.84,
+          "jitter_reduction_pct": 67.98
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "MEDIUM",
+        "method": "adaptive_savgol",
+        "score": 36.06,
+        "status": "VALID",
+        "runtime_ms": 43.94,
+        "metrics": {
+          "mpjpe": 0.369502,
+          "velocity_error": 22.832959,
+          "acceleration_error": 3266.376655,
+          "jitter": 3266.3767,
+          "motion_preservation": 0.558943,
+          "raw_mpjpe": 0.689822,
+          "raw_jitter": 25231.7412,
+          "mpjpe_improvement_pct": 46.44,
+          "jitter_reduction_pct": 87.05
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "noise_level": "HIGH",
+        "method": "adaptive_savgol",
+        "score": 13.85,
+        "status": "VALID",
+        "runtime_ms": 81.94,
+        "metrics": {
+          "mpjpe": 0.827684,
+          "velocity_error": 39.917524,
+          "acceleration_error": 5680.324249,
+          "jitter": 5680.3242,
+          "motion_preservation": 0.909978,
+          "raw_mpjpe": 1.87864,
+          "raw_jitter": 72113.681,
+          "mpjpe_improvement_pct": 55.94,
+          "jitter_reduction_pct": 92.12
+        }
+      }
+    ]
+  },
+  "task2_gap_filling": {
+    "linear": [
+      {
+        "motion_id": "MF001",
+        "gap_type": "SHORT",
+        "gap_id": "MF001_short",
+        "joint_name": "RightArm",
+        "method": "linear",
+        "score": 40.03,
+        "status": "VALID",
+        "runtime_ms": 75.67,
+        "metrics": {
+          "inpainting_mpjpe": 0.05021,
+          "boundary_error": 0.535319,
+          "velocity_boundary_error": 4.707836,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "RightArm",
+          "distal_evaluated_joint": "RightForeArm",
+          "gap_length_frames": 10
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF001_medium",
+        "joint_name": "Head",
+        "method": "linear",
+        "score": 61.71,
+        "status": "VALID",
+        "runtime_ms": 34.43,
+        "metrics": {
+          "inpainting_mpjpe": 0.009726,
+          "boundary_error": 0.41779,
+          "velocity_boundary_error": 2.689314,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "Head",
+          "distal_evaluated_joint": "End_Site_3",
+          "gap_length_frames": 25
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "gap_type": "LONG",
+        "gap_id": "MF001_long",
+        "joint_name": "LeftLeg",
+        "method": "linear",
+        "score": 0.0,
+        "status": "VALID",
+        "runtime_ms": 33.32,
+        "metrics": {
+          "inpainting_mpjpe": 1.626231,
+          "boundary_error": 0.384154,
+          "velocity_boundary_error": 4.424125,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 60
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "SHORT",
+        "gap_id": "MF002_short",
+        "joint_name": "RightLeg",
+        "method": "linear",
+        "score": 43.69,
+        "status": "VALID",
+        "runtime_ms": 35.89,
+        "metrics": {
+          "inpainting_mpjpe": 0.07807,
+          "boundary_error": 0.063548,
+          "velocity_boundary_error": 6.032919,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "RightLeg",
+          "distal_evaluated_joint": "RightFoot",
+          "gap_length_frames": 8
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF002_medium",
+        "joint_name": "LeftForeArm",
+        "method": "linear",
+        "score": 45.4,
+        "status": "VALID",
+        "runtime_ms": 42.98,
+        "metrics": {
+          "inpainting_mpjpe": 0.029431,
+          "boundary_error": 0.302435,
+          "velocity_boundary_error": 8.020696,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftForeArm",
+          "distal_evaluated_joint": "LeftHand",
+          "gap_length_frames": 25
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "LONG",
+        "gap_id": "MF002_long",
+        "joint_name": "LeftArm",
+        "method": "linear",
+        "score": 0.61,
+        "status": "VALID",
+        "runtime_ms": 78.47,
+        "metrics": {
+          "inpainting_mpjpe": 0.734604,
+          "boundary_error": 0.287295,
+          "velocity_boundary_error": 6.887678,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftArm",
+          "distal_evaluated_joint": "LeftForeArm",
+          "gap_length_frames": 57
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "SHORT",
+        "gap_id": "MF003_short",
+        "joint_name": "LeftArm",
+        "method": "linear",
+        "score": 53.91,
+        "status": "VALID",
+        "runtime_ms": 62.64,
+        "metrics": {
+          "inpainting_mpjpe": 0.039753,
+          "boundary_error": 0.227777,
+          "velocity_boundary_error": 4.305596,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftArm",
+          "distal_evaluated_joint": "LeftForeArm",
+          "gap_length_frames": 11
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF003_medium",
+        "joint_name": "LeftLeg",
+        "method": "linear",
+        "score": 38.39,
+        "status": "VALID",
+        "runtime_ms": 26.13,
+        "metrics": {
+          "inpainting_mpjpe": 0.098322,
+          "boundary_error": 0.078379,
+          "velocity_boundary_error": 5.899377,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 13
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "LONG",
+        "gap_id": "MF003_long",
+        "joint_name": "LeftLeg",
+        "method": "linear",
+        "score": 0.0,
+        "status": "VALID",
+        "runtime_ms": 42.82,
+        "metrics": {
+          "inpainting_mpjpe": 2.653141,
+          "boundary_error": 0.50065,
+          "velocity_boundary_error": 36.478054,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 51
+        }
+      }
+    ],
+    "natural_cubic": [
+      {
+        "motion_id": "MF001",
+        "gap_type": "SHORT",
+        "gap_id": "MF001_short",
+        "joint_name": "RightArm",
+        "method": "natural_cubic",
+        "score": 36.87,
+        "status": "VALID",
+        "runtime_ms": 31.62,
+        "metrics": {
+          "inpainting_mpjpe": 0.079884,
+          "boundary_error": 0.532243,
+          "velocity_boundary_error": 2.691962,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "RightArm",
+          "distal_evaluated_joint": "RightForeArm",
+          "gap_length_frames": 10
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF001_medium",
+        "joint_name": "Head",
+        "method": "natural_cubic",
+        "score": 58.34,
+        "status": "VALID",
+        "runtime_ms": 49.4,
+        "metrics": {
+          "inpainting_mpjpe": 0.020391,
+          "boundary_error": 0.415146,
+          "velocity_boundary_error": 2.523995,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "Head",
+          "distal_evaluated_joint": "End_Site_3",
+          "gap_length_frames": 25
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "gap_type": "LONG",
+        "gap_id": "MF001_long",
+        "joint_name": "LeftLeg",
+        "method": "natural_cubic",
+        "score": 0.0,
+        "status": "VALID",
+        "runtime_ms": 29.62,
+        "metrics": {
+          "inpainting_mpjpe": 1.841217,
+          "boundary_error": 0.392403,
+          "velocity_boundary_error": 3.681893,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 60
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "SHORT",
+        "gap_id": "MF002_short",
+        "joint_name": "RightLeg",
+        "method": "natural_cubic",
+        "score": 63.71,
+        "status": "VALID",
+        "runtime_ms": 43.66,
+        "metrics": {
+          "inpainting_mpjpe": 0.037844,
+          "boundary_error": 0.037459,
+          "velocity_boundary_error": 3.830545,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "RightLeg",
+          "distal_evaluated_joint": "RightFoot",
+          "gap_length_frames": 8
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF002_medium",
+        "joint_name": "LeftForeArm",
+        "method": "natural_cubic",
+        "score": 37.57,
+        "status": "VALID",
+        "runtime_ms": 35.2,
+        "metrics": {
+          "inpainting_mpjpe": 0.060439,
+          "boundary_error": 0.30025,
+          "velocity_boundary_error": 7.985914,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftForeArm",
+          "distal_evaluated_joint": "LeftHand",
+          "gap_length_frames": 25
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "LONG",
+        "gap_id": "MF002_long",
+        "joint_name": "LeftArm",
+        "method": "natural_cubic",
+        "score": 38.0,
+        "status": "VALID",
+        "runtime_ms": 68.76,
+        "metrics": {
+          "inpainting_mpjpe": 0.099843,
+          "boundary_error": 0.337554,
+          "velocity_boundary_error": 2.299786,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftArm",
+          "distal_evaluated_joint": "LeftForeArm",
+          "gap_length_frames": 57
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "SHORT",
+        "gap_id": "MF003_short",
+        "joint_name": "LeftArm",
+        "method": "natural_cubic",
+        "score": 19.09,
+        "status": "VALID",
+        "runtime_ms": 25.55,
+        "metrics": {
+          "inpainting_mpjpe": 0.17227,
+          "boundary_error": 0.248878,
+          "velocity_boundary_error": 8.349924,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftArm",
+          "distal_evaluated_joint": "LeftForeArm",
+          "gap_length_frames": 11
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF003_medium",
+        "joint_name": "LeftLeg",
+        "method": "natural_cubic",
+        "score": 62.67,
+        "status": "VALID",
+        "runtime_ms": 32.11,
+        "metrics": {
+          "inpainting_mpjpe": 0.028632,
+          "boundary_error": 0.076678,
+          "velocity_boundary_error": 4.769534,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 13
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "LONG",
+        "gap_id": "MF003_long",
+        "joint_name": "LeftLeg",
+        "method": "natural_cubic",
+        "score": 0.01,
+        "status": "VALID",
+        "runtime_ms": 101.32,
+        "metrics": {
+          "inpainting_mpjpe": 1.387508,
+          "boundary_error": 0.754989,
+          "velocity_boundary_error": 6.415603,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 51
+        }
+      }
+    ],
+    "pchip": [
+      {
+        "motion_id": "MF001",
+        "gap_type": "SHORT",
+        "gap_id": "MF001_short",
+        "joint_name": "RightArm",
+        "method": "pchip",
+        "score": 40.5,
+        "status": "VALID",
+        "runtime_ms": 61.61,
+        "metrics": {
+          "inpainting_mpjpe": 0.053046,
+          "boundary_error": 0.537251,
+          "velocity_boundary_error": 4.090381,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "RightArm",
+          "distal_evaluated_joint": "RightForeArm",
+          "gap_length_frames": 10
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF001_medium",
+        "joint_name": "Head",
+        "method": "pchip",
+        "score": 63.51,
+        "status": "VALID",
+        "runtime_ms": 43.41,
+        "metrics": {
+          "inpainting_mpjpe": 0.004764,
+          "boundary_error": 0.416459,
+          "velocity_boundary_error": 2.750901,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "Head",
+          "distal_evaluated_joint": "End_Site_3",
+          "gap_length_frames": 25
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "gap_type": "LONG",
+        "gap_id": "MF001_long",
+        "joint_name": "LeftLeg",
+        "method": "pchip",
+        "score": 0.0,
+        "status": "VALID",
+        "runtime_ms": 22.17,
+        "metrics": {
+          "inpainting_mpjpe": 1.860143,
+          "boundary_error": 0.395456,
+          "velocity_boundary_error": 3.638064,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 60
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "SHORT",
+        "gap_id": "MF002_short",
+        "joint_name": "RightLeg",
+        "method": "pchip",
+        "score": 58.98,
+        "status": "VALID",
+        "runtime_ms": 38.05,
+        "metrics": {
+          "inpainting_mpjpe": 0.046434,
+          "boundary_error": 0.040961,
+          "velocity_boundary_error": 4.258815,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "RightLeg",
+          "distal_evaluated_joint": "RightFoot",
+          "gap_length_frames": 8
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF002_medium",
+        "joint_name": "LeftForeArm",
+        "method": "pchip",
+        "score": 45.46,
+        "status": "VALID",
+        "runtime_ms": 41.63,
+        "metrics": {
+          "inpainting_mpjpe": 0.029572,
+          "boundary_error": 0.301769,
+          "velocity_boundary_error": 7.98508,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftForeArm",
+          "distal_evaluated_joint": "LeftHand",
+          "gap_length_frames": 25
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "LONG",
+        "gap_id": "MF002_long",
+        "joint_name": "LeftArm",
+        "method": "pchip",
+        "score": 1.14,
+        "status": "VALID",
+        "runtime_ms": 49.65,
+        "metrics": {
+          "inpainting_mpjpe": 0.641327,
+          "boundary_error": 0.297952,
+          "velocity_boundary_error": 5.690772,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftArm",
+          "distal_evaluated_joint": "LeftForeArm",
+          "gap_length_frames": 57
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "SHORT",
+        "gap_id": "MF003_short",
+        "joint_name": "LeftArm",
+        "method": "pchip",
+        "score": 26.42,
+        "status": "VALID",
+        "runtime_ms": 31.81,
+        "metrics": {
+          "inpainting_mpjpe": 0.13522,
+          "boundary_error": 0.236291,
+          "velocity_boundary_error": 6.612734,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftArm",
+          "distal_evaluated_joint": "LeftForeArm",
+          "gap_length_frames": 11
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF003_medium",
+        "joint_name": "LeftLeg",
+        "method": "pchip",
+        "score": 49.85,
+        "status": "VALID",
+        "runtime_ms": 84.54,
+        "metrics": {
+          "inpainting_mpjpe": 0.060454,
+          "boundary_error": 0.075998,
+          "velocity_boundary_error": 5.408024,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 13
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "LONG",
+        "gap_id": "MF003_long",
+        "joint_name": "LeftLeg",
+        "method": "pchip",
+        "score": 0.0,
+        "status": "VALID",
+        "runtime_ms": 35.45,
+        "metrics": {
+          "inpainting_mpjpe": 2.509141,
+          "boundary_error": 0.524448,
+          "velocity_boundary_error": 33.422581,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 51
+        }
+      }
+    ],
+    "clamped_hermite": [
+      {
+        "motion_id": "MF001",
+        "gap_type": "SHORT",
+        "gap_id": "MF001_short",
+        "joint_name": "RightArm",
+        "method": "clamped_hermite",
+        "score": 37.85,
+        "status": "VALID",
+        "runtime_ms": 54.96,
+        "metrics": {
+          "inpainting_mpjpe": 0.07261,
+          "boundary_error": 0.53627,
+          "velocity_boundary_error": 3.020422,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "RightArm",
+          "distal_evaluated_joint": "RightForeArm",
+          "gap_length_frames": 10
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF001_medium",
+        "joint_name": "Head",
+        "method": "clamped_hermite",
+        "score": 60.0,
+        "status": "VALID",
+        "runtime_ms": 50.78,
+        "metrics": {
+          "inpainting_mpjpe": 0.015824,
+          "boundary_error": 0.415529,
+          "velocity_boundary_error": 2.52606,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "Head",
+          "distal_evaluated_joint": "End_Site_3",
+          "gap_length_frames": 25
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "gap_type": "LONG",
+        "gap_id": "MF001_long",
+        "joint_name": "LeftLeg",
+        "method": "clamped_hermite",
+        "score": 0.0,
+        "status": "VALID",
+        "runtime_ms": 28.28,
+        "metrics": {
+          "inpainting_mpjpe": 1.849606,
+          "boundary_error": 0.393442,
+          "velocity_boundary_error": 3.622474,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 60
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "SHORT",
+        "gap_id": "MF002_short",
+        "joint_name": "RightLeg",
+        "method": "clamped_hermite",
+        "score": 68.22,
+        "status": "VALID",
+        "runtime_ms": 52.65,
+        "metrics": {
+          "inpainting_mpjpe": 0.030309,
+          "boundary_error": 0.033921,
+          "velocity_boundary_error": 3.443266,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "RightLeg",
+          "distal_evaluated_joint": "RightFoot",
+          "gap_length_frames": 8
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF002_medium",
+        "joint_name": "LeftForeArm",
+        "method": "clamped_hermite",
+        "score": 40.94,
+        "status": "VALID",
+        "runtime_ms": 48.28,
+        "metrics": {
+          "inpainting_mpjpe": 0.046893,
+          "boundary_error": 0.300223,
+          "velocity_boundary_error": 7.947925,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftForeArm",
+          "distal_evaluated_joint": "LeftHand",
+          "gap_length_frames": 25
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "gap_type": "LONG",
+        "gap_id": "MF002_long",
+        "joint_name": "LeftArm",
+        "method": "clamped_hermite",
+        "score": 17.48,
+        "status": "VALID",
+        "runtime_ms": 100.43,
+        "metrics": {
+          "inpainting_mpjpe": 0.221979,
+          "boundary_error": 0.32715,
+          "velocity_boundary_error": 2.802857,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftArm",
+          "distal_evaluated_joint": "LeftForeArm",
+          "gap_length_frames": 57
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "SHORT",
+        "gap_id": "MF003_short",
+        "joint_name": "LeftArm",
+        "method": "clamped_hermite",
+        "score": 20.15,
+        "status": "VALID",
+        "runtime_ms": 25.88,
+        "metrics": {
+          "inpainting_mpjpe": 0.166774,
+          "boundary_error": 0.244627,
+          "velocity_boundary_error": 8.003049,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftArm",
+          "distal_evaluated_joint": "LeftForeArm",
+          "gap_length_frames": 11
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "MEDIUM",
+        "gap_id": "MF003_medium",
+        "joint_name": "LeftLeg",
+        "method": "clamped_hermite",
+        "score": 62.97,
+        "status": "VALID",
+        "runtime_ms": 79.47,
+        "metrics": {
+          "inpainting_mpjpe": 0.02664,
+          "boundary_error": 0.074758,
+          "velocity_boundary_error": 4.946801,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 13
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "gap_type": "LONG",
+        "gap_id": "MF003_long",
+        "joint_name": "LeftLeg",
+        "method": "clamped_hermite",
+        "score": 0.0,
+        "status": "VALID",
+        "runtime_ms": 30.38,
+        "metrics": {
+          "inpainting_mpjpe": 1.649859,
+          "boundary_error": 0.711235,
+          "velocity_boundary_error": 11.098826,
+          "foot_skating": 0.0,
+          "unmodified_max_diff": 0.0,
+          "target_joint": "LeftLeg",
+          "distal_evaluated_joint": "LeftFoot",
+          "gap_length_frames": 51
+        }
+      }
+    ]
+  },
+  "task3_retargeting": {
+    "baseline": [
+      {
+        "motion_id": "MF001",
+        "target_type": "target_small",
+        "method": "baseline",
+        "score": 40.21,
+        "status": "VALID",
+        "runtime_ms": 20.46,
+        "metrics": {
+          "end_effector_error": 0.02511,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 1.2427,
+          "min_foot_height_y": -1.2427,
+          "temporal_velocity_ratio": 0.9806,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0,
+          "right_foot_contact_ratio": 0.0032,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.8525,
+          "mean_skating_speed": 0.4263
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "target_type": "target_medium",
+        "method": "baseline",
+        "score": 58.28,
+        "status": "VALID",
+        "runtime_ms": 30.65,
+        "metrics": {
+          "end_effector_error": 0.021306,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.4719,
+          "min_foot_height_y": -0.4719,
+          "temporal_velocity_ratio": 1.0143,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0886,
+          "right_foot_contact_ratio": 0.0759,
+          "left_foot_sliding_speed": 0.5952,
+          "right_foot_sliding_speed": 0.6509,
+          "mean_skating_speed": 0.6231
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "target_type": "target_tall",
+        "method": "baseline",
+        "score": 69.56,
+        "status": "VALID",
+        "runtime_ms": 28.81,
+        "metrics": {
+          "end_effector_error": 0.022019,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": 0.1753,
+          "temporal_velocity_ratio": 1.0511,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0,
+          "right_foot_contact_ratio": 0.0032,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.6411,
+          "mean_skating_speed": 0.3205
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_small",
+        "method": "baseline",
+        "score": 46.35,
+        "status": "VALID",
+        "runtime_ms": 73.87,
+        "metrics": {
+          "end_effector_error": 0.025794,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.8593,
+          "min_foot_height_y": -0.8593,
+          "temporal_velocity_ratio": 0.9802,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0022,
+          "right_foot_contact_ratio": 0.0,
+          "left_foot_sliding_speed": 0.7009,
+          "right_foot_sliding_speed": 0.0,
+          "mean_skating_speed": 0.3505
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_medium",
+        "method": "baseline",
+        "score": 71.15,
+        "status": "VALID",
+        "runtime_ms": 42.77,
+        "metrics": {
+          "end_effector_error": 0.020647,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": 0.0708,
+          "temporal_velocity_ratio": 1.0131,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.1626,
+          "right_foot_contact_ratio": 0.1425,
+          "left_foot_sliding_speed": 0.5556,
+          "right_foot_sliding_speed": 0.6047,
+          "mean_skating_speed": 0.5801
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_tall",
+        "method": "baseline",
+        "score": 68.52,
+        "status": "VALID",
+        "runtime_ms": 34.05,
+        "metrics": {
+          "end_effector_error": 0.022935,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": 0.84,
+          "temporal_velocity_ratio": 1.0511,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0089,
+          "right_foot_contact_ratio": 0.0045,
+          "left_foot_sliding_speed": 0.7045,
+          "right_foot_sliding_speed": 0.745,
+          "mean_skating_speed": 0.7248
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_small",
+        "method": "baseline",
+        "score": 21.67,
+        "status": "VALID",
+        "runtime_ms": 19.63,
+        "metrics": {
+          "end_effector_error": 0.022661,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 4e-06,
+          "ground_penetration_penalty": 2.8896,
+          "min_foot_height_y": -2.8896,
+          "temporal_velocity_ratio": 0.9603,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0166,
+          "right_foot_contact_ratio": 0.0166,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.0,
+          "mean_skating_speed": 0.0
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_medium",
+        "method": "baseline",
+        "score": 22.71,
+        "status": "VALID",
+        "runtime_ms": 36.51,
+        "metrics": {
+          "end_effector_error": 0.021177,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 2.8336,
+          "min_foot_height_y": -2.8336,
+          "temporal_velocity_ratio": 1.0288,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0662,
+          "right_foot_contact_ratio": 0.0364,
+          "left_foot_sliding_speed": 0.4231,
+          "right_foot_sliding_speed": 0.3522,
+          "mean_skating_speed": 0.3877
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_tall",
+        "method": "baseline",
+        "score": 24.17,
+        "status": "VALID",
+        "runtime_ms": 49.18,
+        "metrics": {
+          "end_effector_error": 0.019855,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 2.7324,
+          "min_foot_height_y": -2.7324,
+          "temporal_velocity_ratio": 1.0827,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0166,
+          "right_foot_contact_ratio": 0.0298,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.2884,
+          "mean_skating_speed": 0.1442
+        }
+      }
+    ],
+    "full_chain": [
+      {
+        "motion_id": "MF001",
+        "target_type": "target_small",
+        "method": "full_chain",
+        "score": 42.69,
+        "status": "VALID",
+        "runtime_ms": 22.9,
+        "metrics": {
+          "end_effector_error": 0.02511,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 1.093,
+          "min_foot_height_y": -1.093,
+          "temporal_velocity_ratio": 0.9807,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0,
+          "right_foot_contact_ratio": 0.0032,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.8525,
+          "mean_skating_speed": 0.4263
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "target_type": "target_medium",
+        "method": "full_chain",
+        "score": 55.32,
+        "status": "VALID",
+        "runtime_ms": 36.8,
+        "metrics": {
+          "end_effector_error": 0.021306,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.6023,
+          "min_foot_height_y": -0.6023,
+          "temporal_velocity_ratio": 1.0142,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0886,
+          "right_foot_contact_ratio": 0.0759,
+          "left_foot_sliding_speed": 0.5952,
+          "right_foot_sliding_speed": 0.6509,
+          "mean_skating_speed": 0.6231
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "target_type": "target_tall",
+        "method": "full_chain",
+        "score": 64.87,
+        "status": "VALID",
+        "runtime_ms": 29.08,
+        "metrics": {
+          "end_effector_error": 0.022019,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 0.1746,
+          "min_foot_height_y": -0.1746,
+          "temporal_velocity_ratio": 1.0509,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0,
+          "right_foot_contact_ratio": 0.0032,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.6411,
+          "mean_skating_speed": 0.3205
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_small",
+        "method": "full_chain",
+        "score": 49.31,
+        "status": "VALID",
+        "runtime_ms": 39.36,
+        "metrics": {
+          "end_effector_error": 0.025794,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.7048,
+          "min_foot_height_y": -0.7048,
+          "temporal_velocity_ratio": 0.9803,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0022,
+          "right_foot_contact_ratio": 0.0,
+          "left_foot_sliding_speed": 0.7009,
+          "right_foot_sliding_speed": 0.0,
+          "mean_skating_speed": 0.3505
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_medium",
+        "method": "full_chain",
+        "score": 69.36,
+        "status": "VALID",
+        "runtime_ms": 36.35,
+        "metrics": {
+          "end_effector_error": 0.020647,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.0637,
+          "min_foot_height_y": -0.0637,
+          "temporal_velocity_ratio": 1.013,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.1626,
+          "right_foot_contact_ratio": 0.1425,
+          "left_foot_sliding_speed": 0.5556,
+          "right_foot_sliding_speed": 0.6047,
+          "mean_skating_speed": 0.5801
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_tall",
+        "method": "full_chain",
+        "score": 68.52,
+        "status": "VALID",
+        "runtime_ms": 34.76,
+        "metrics": {
+          "end_effector_error": 0.022935,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": 0.479,
+          "temporal_velocity_ratio": 1.0508,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0089,
+          "right_foot_contact_ratio": 0.0045,
+          "left_foot_sliding_speed": 0.7045,
+          "right_foot_sliding_speed": 0.745,
+          "mean_skating_speed": 0.7248
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_small",
+        "method": "full_chain",
+        "score": 22.83,
+        "status": "VALID",
+        "runtime_ms": 32.56,
+        "metrics": {
+          "end_effector_error": 0.022661,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 4e-06,
+          "ground_penetration_penalty": 2.7584,
+          "min_foot_height_y": -2.7584,
+          "temporal_velocity_ratio": 0.9604,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0166,
+          "right_foot_contact_ratio": 0.0166,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.0,
+          "mean_skating_speed": 0.0
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_medium",
+        "method": "full_chain",
+        "score": 21.69,
+        "status": "VALID",
+        "runtime_ms": 29.09,
+        "metrics": {
+          "end_effector_error": 0.021177,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 2.948,
+          "min_foot_height_y": -2.948,
+          "temporal_velocity_ratio": 1.0286,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0662,
+          "right_foot_contact_ratio": 0.0364,
+          "left_foot_sliding_speed": 0.4231,
+          "right_foot_sliding_speed": 0.3522,
+          "mean_skating_speed": 0.3877
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_tall",
+        "method": "full_chain",
+        "score": 21.38,
+        "status": "VALID",
+        "runtime_ms": 21.89,
+        "metrics": {
+          "end_effector_error": 0.019855,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 3.0382,
+          "min_foot_height_y": -3.0382,
+          "temporal_velocity_ratio": 1.0822,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0166,
+          "right_foot_contact_ratio": 0.0298,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.2884,
+          "mean_skating_speed": 0.1442
+        }
+      }
+    ],
+    "contact_aware": [
+      {
+        "motion_id": "MF001",
+        "target_type": "target_small",
+        "method": "contact_aware",
+        "score": 66.11,
+        "status": "VALID",
+        "runtime_ms": 295.68,
+        "metrics": {
+          "end_effector_error": 0.02511,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": 0.0,
+          "temporal_velocity_ratio": 0.9891,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0,
+          "right_foot_contact_ratio": 0.0032,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.8525,
+          "mean_skating_speed": 0.4263
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "target_type": "target_medium",
+        "method": "contact_aware",
+        "score": 70.38,
+        "status": "VALID",
+        "runtime_ms": 272.86,
+        "metrics": {
+          "end_effector_error": 0.021306,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.0001,
+          "min_foot_height_y": -0.0001,
+          "temporal_velocity_ratio": 1.0201,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0886,
+          "right_foot_contact_ratio": 0.0759,
+          "left_foot_sliding_speed": 0.5952,
+          "right_foot_sliding_speed": 0.6509,
+          "mean_skating_speed": 0.6231
+        }
+      },
+      {
+        "motion_id": "MF001",
+        "target_type": "target_tall",
+        "method": "contact_aware",
+        "score": 69.56,
+        "status": "VALID",
+        "runtime_ms": 321.63,
+        "metrics": {
+          "end_effector_error": 0.022019,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": -0.0,
+          "temporal_velocity_ratio": 1.0518,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0,
+          "right_foot_contact_ratio": 0.0032,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.6411,
+          "mean_skating_speed": 0.3205
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_small",
+        "method": "contact_aware",
+        "score": 65.36,
+        "status": "VALID",
+        "runtime_ms": 327.86,
+        "metrics": {
+          "end_effector_error": 0.025794,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.0001,
+          "min_foot_height_y": -0.0001,
+          "temporal_velocity_ratio": 0.9854,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0022,
+          "right_foot_contact_ratio": 0.0,
+          "left_foot_sliding_speed": 0.7009,
+          "right_foot_sliding_speed": 0.0,
+          "mean_skating_speed": 0.3505
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_medium",
+        "method": "contact_aware",
+        "score": 71.15,
+        "status": "VALID",
+        "runtime_ms": 532.21,
+        "metrics": {
+          "end_effector_error": 0.020647,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.0001,
+          "min_foot_height_y": -0.0001,
+          "temporal_velocity_ratio": 1.0133,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.1626,
+          "right_foot_contact_ratio": 0.1425,
+          "left_foot_sliding_speed": 0.5556,
+          "right_foot_sliding_speed": 0.6047,
+          "mean_skating_speed": 0.5801
+        }
+      },
+      {
+        "motion_id": "MF002",
+        "target_type": "target_tall",
+        "method": "contact_aware",
+        "score": 68.52,
+        "status": "VALID",
+        "runtime_ms": 474.5,
+        "metrics": {
+          "end_effector_error": 0.022935,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": 0.479,
+          "temporal_velocity_ratio": 1.0508,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0089,
+          "right_foot_contact_ratio": 0.0045,
+          "left_foot_sliding_speed": 0.7045,
+          "right_foot_sliding_speed": 0.745,
+          "mean_skating_speed": 0.7248
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_small",
+        "method": "contact_aware",
+        "score": 68.83,
+        "status": "VALID",
+        "runtime_ms": 246.69,
+        "metrics": {
+          "end_effector_error": 0.022661,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 4e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": -0.0,
+          "temporal_velocity_ratio": 0.9845,
+          "target_avatar": "target_small"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0166,
+          "right_foot_contact_ratio": 0.0166,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.0,
+          "mean_skating_speed": 0.0
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_medium",
+        "method": "contact_aware",
+        "score": 70.53,
+        "status": "VALID",
+        "runtime_ms": 245.81,
+        "metrics": {
+          "end_effector_error": 0.021177,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 5e-06,
+          "ground_penetration_penalty": 0.0,
+          "min_foot_height_y": -0.0,
+          "temporal_velocity_ratio": 1.0581,
+          "target_avatar": "target_medium"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0662,
+          "right_foot_contact_ratio": 0.0364,
+          "left_foot_sliding_speed": 0.4231,
+          "right_foot_sliding_speed": 0.3522,
+          "mean_skating_speed": 0.3877
+        }
+      },
+      {
+        "motion_id": "MF003",
+        "target_type": "target_tall",
+        "method": "contact_aware",
+        "score": 72.09,
+        "status": "VALID",
+        "runtime_ms": 296.35,
+        "metrics": {
+          "end_effector_error": 0.019855,
+          "angular_geodesic_error": 0.0,
+          "bone_length_violation_max": 6e-06,
+          "ground_penetration_penalty": 0.0001,
+          "min_foot_height_y": -0.0001,
+          "temporal_velocity_ratio": 1.1125,
+          "target_avatar": "target_tall"
+        },
+        "diagnostics": {
+          "left_foot_contact_ratio": 0.0166,
+          "right_foot_contact_ratio": 0.0298,
+          "left_foot_sliding_speed": 0.0,
+          "right_foot_sliding_speed": 0.2884,
+          "mean_skating_speed": 0.1442
+        }
+      }
+    ]
+  }
+}

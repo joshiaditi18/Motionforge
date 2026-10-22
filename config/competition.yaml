@@ -1,0 +1,81 @@
+# MOTIONFORGE Competition Configuration File
+# Version: 1.0.0
+# Phase: Phase 2 (Specification Frozen)
+
+competition:
+  name: "MOTIONFORGE"
+  tagline: "Clean. Complete. Retarget."
+  version: "1.0.0"
+  random_seed: 2026
+  status: "SPECIFICATION_FROZEN"
+
+dataset:
+  source: "CMU Motion Capture Database"
+  format: "BVH"
+  total_motions: 30
+  sampling_rate_fps: 120.0
+  frame_time: 0.0083333
+  total_channels: 96
+  joint_count: 31
+  root_joint: "Hips"
+  split:
+    training_percentage: 70
+    testing_percentage: 30
+    training_motions: 21
+    testing_motions: 9
+
+tasks:
+  denoising:
+    enabled: true
+    levels: ["LOW", "MEDIUM", "HIGH"]
+    preserve_frame_count: true
+    metrics:
+      - "mpjpe"
+      - "velocity_error"
+      - "jitter_penalty"
+      - "motion_preservation_ratio"
+  gap_filling:
+    enabled: true
+    types: ["SHORT", "MEDIUM", "LONG"]
+    preserve_frame_count: true
+    metrics:
+      - "inpainting_mpjpe"
+      - "boundary_continuity"
+      - "velocity_continuity"
+      - "foot_skating"
+  retargeting:
+    enabled: true
+    target_skeletons: ["target_small", "target_medium", "target_tall"]
+    preserve_frame_count: true
+    metrics:
+      - "end_effector_error"
+      - "angular_geodesic_error"
+      - "bone_length_invariance"
+      - "ground_penetration_penalty"
+
+scoring:
+  provisional_weights:
+    denoising: 0.30
+    gap_filling: 0.30
+    retargeting: 0.40
+  normalization:
+    method: "exponential_decay"
+    # Normalizer parameters require experimental calibration on baseline models
+    mpjpe_tau: null                 # NEEDS CALIBRATION IN PHASE 3/4
+    velocity_tau: null              # NEEDS CALIBRATION IN PHASE 3/4
+    jitter_tau: null                # NEEDS CALIBRATION IN PHASE 3/4
+    boundary_tau: null              # NEEDS CALIBRATION IN PHASE 3/4
+    end_effector_tau: null          # NEEDS CALIBRATION IN PHASE 3/4
+    angular_tau: null               # NEEDS CALIBRATION IN PHASE 3/4
+
+runtime:
+  # Execution constraints require hardware profiling with baseline algorithms
+  timeout_seconds: null             # NEEDS CALIBRATION IN PHASE 3/4 (Provisional: 300s)
+  memory_limit_mb: null             # NEEDS CALIBRATION IN PHASE 3/4 (Provisional: 8192 MB)
+  max_archive_size_mb: null         # NEEDS CALIBRATION IN PHASE 3/4 (Provisional: 100 MB)
+  network_access: false             # FINALIZED
+  sandboxed: true                   # FINALIZED
+
+submission:
+  max_daily_attempts: null          # NEEDS CALIBRATION IN PHASE 3/4 (Provisional: 5)
+  leaderboard_selection: "BEST"     # Options: BEST or LATEST (Provisional)

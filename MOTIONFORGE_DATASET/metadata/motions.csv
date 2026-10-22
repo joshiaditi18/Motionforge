@@ -1,0 +1,31 @@
+motion_id,cmu_subject,cmu_trial,description,fps,frame_count,duration_seconds,joint_count,root_joint,source_format,source_path,clean_bvh_path
+MF001,7,1,walk,120,317,2.642,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_07_trial_01\07_01.bvh,clean\bvh\MF001_clean.bvh
+MF002,7,4,slow walk,120,450,3.75,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_07_trial_04\07_04.bvh,clean\bvh\MF002_clean.bvh
+MF003,8,7,"walk, exaggerated stride",120,303,2.525,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_08_trial_07\08_07.bvh,clean\bvh\MF003_clean.bvh
+MF004,8,9,walk,120,294,2.45,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_08_trial_09\08_09.bvh,clean\bvh\MF004_clean.bvh
+MF005,9,1,run,120,149,1.242,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_09_trial_01\09_01.bvh,clean\bvh\MF005_clean.bvh
+MF006,9,5,run,120,144,1.2,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_09_trial_05\09_05.bvh,clean\bvh\MF006_clean.bvh
+MF007,16,1,jump,120,323,2.692,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_16_trial_01\16_01.bvh,clean\bvh\MF007_clean.bvh
+MF008,16,3,high jump,120,411,3.425,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_16_trial_03\16_03.bvh,clean\bvh\MF008_clean.bvh
+MF009,16,5,forward jump,120,296,2.467,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_16_trial_05\16_05.bvh,clean\bvh\MF009_clean.bvh
+MF010,16,8,"run/jog, sudden stop",120,240,2.0,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_16_trial_08\16_08.bvh,clean\bvh\MF010_clean.bvh
+MF011,16,11,"walk, veer left",120,535,4.458,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_16_trial_11\16_11.bvh,clean\bvh\MF011_clean.bvh
+MF012,35,14,walk,120,412,3.433,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_35_trial_14\35_14.bvh,clean\bvh\MF012_clean.bvh
+MF013,35,33,walk,120,422,3.517,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_35_trial_33\35_33.bvh,clean\bvh\MF013_clean.bvh
+MF014,35,27,navigate around obstacles,120,9808,81.733,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_35_trial_27\35_27.bvh,clean\bvh\MF014_clean.bvh
+MF015,38,3,run around in a circle,120,762,6.35,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_38_trial_03\38_03.bvh,clean\bvh\MF015_clean.bvh
+MF016,38,4,"walk around, frequent turns, cyclic walk along a line",120,8632,71.933,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_38_trial_04\38_04.bvh,clean\bvh\MF016_clean.bvh
+MF017,49,2,"jump up and down, hop on one foot",120,2086,17.383,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_49_trial_02\49_02.bvh,clean\bvh\MF017_clean.bvh
+MF018,49,4,"run, leap",120,252,2.1,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_49_trial_04\49_04.bvh,clean\bvh\MF018_clean.bvh
+MF019,49,6,cartwheel,120,482,4.017,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_49_trial_06\49_06.bvh,clean\bvh\MF019_clean.bvh
+MF020,60,1,salsa dance,120,2243,18.692,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_60_trial_01\60_01.bvh,clean\bvh\MF020_clean.bvh
+MF021,60,2,salsa dance,120,2102,17.517,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_60_trial_02\60_02.bvh,clean\bvh\MF021_clean.bvh
+MF022,75,1,run jump,120,379,3.158,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_75_trial_01\75_01.bvh,clean\bvh\MF022_clean.bvh
+MF023,75,6,180 jump,120,730,6.083,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_75_trial_06\75_06.bvh,clean\bvh\MF023_clean.bvh
+MF024,86,3,"walking, running, jumping, kicking, and stretching",120,8402,70.016,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_86_trial_03\86_03.bvh,clean\bvh\MF024_clean.bvh
+MF025,86,6,"walking, running, kicking, punching, knee kicking, and stretching",120,9940,82.833,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_86_trial_06\86_06.bvh,clean\bvh\MF025_clean.bvh
+MF026,103,3,charleston_01,120,443,3.692,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_103_trial_03\103_03.bvh,clean\bvh\MF026_clean.bvh
+MF027,104,1,JogThrough,120,386,3.217,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_104_trial_01\104_01.bvh,clean\bvh\MF027_clean.bvh
+MF028,127,4,Walk to Run,120,447,3.725,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_127_trial_04\127_04.bvh,clean\bvh\MF028_clean.bvh
+MF029,140,8,Get Up From Ground Laying on Back,120,899,7.492,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_140_trial_08\140_08.bvh,clean\bvh\MF029_clean.bvh
+MF030,144,20,Punch_Sequence,120,2271,18.925,31,Hips,BVH (from CMU ASF/AMC),source\cmu_original\subject_144_trial_20\144_20.bvh,clean\bvh\MF030_clean.bvh

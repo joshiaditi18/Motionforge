@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTIONFORGE — 3D Motion Capture Viewer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #header {
+            background: #1e293b;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #334155;
+            z-index: 10;
+        }
+        .title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .badge {
+            background: #38bdf8;
+            color: #0f172a;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-weight: bold;
+        }
+        #controls-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            background: #1d4ed8;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #475569;
+            color: #cbd5e1;
+        }
+        .btn-outline:hover {
+            background: #334155;
+            color: white;
+        }
+        #file-input {
+            display: none;
+        }
+        #canvas-container {
+            flex: 1;
+            position: relative;
+            outline: none;
+        }
+        #bottom-bar {
+            background: #1e293b;
+            padding: 10px 20px;
+            border-top: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 10;
+        }
+        #timeline {
+            flex: 1;
+            accent-color: #38bdf8;
+            cursor: pointer;
+        }
+        #time-display {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            min-width: 90px;
+        }
+        #overlay-info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            padding: 14px 18px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            font-size: 0.85rem;
+            pointer-events: none;
+            z-index: 5;
+            max-width: 320px;
+        }
+        #overlay-info h3 {
+            font-size: 0.95rem;
+            color: #38bdf8;
+            margin-bottom: 6px;
+        }
+        #drop-zone {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(15, 23, 42, 0.9);
+            z-index: 20;
+            border: 2px dashed #38bdf8;
+            margin: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+        #drop-zone.hidden {
+            display: none;
+        }
+        #drop-zone h2 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #f8fafc;
+        }
+        #drop-zone p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+        .select-list {
+            background: #334155;
+            color: #f8fafc;
+            border: 1px solid #475569;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            outline: none;
+        }
+    </style>
+    <!-- Import three.js and modules via ES module -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="title">
+            MOTIONFORGE 3D Player
+            <span class="badge">BVH Viewer</span>
+        </div>
+        <div id="controls-bar">
+            <label for="file-input" class="btn">Select .bvh File</label>
+            <input type="file" id="file-input" accept=".bvh">
+            <button id="btn-toggle-grid" class="btn btn-outline">Grid</button>
+            <button id="btn-reset-cam" class="btn btn-outline">Reset Camera</button>
+        </div>
+    </div>
+
+    <div id="canvas-container">
+        <div id="overlay-info">
+            <h3 id="motion-title">No Motion Loaded</h3>
+            <p id="motion-stats">Select or drag & drop any .bvh file from <code>clean/bvh/</code> or <code>public/</code> to view the 3D character animation.</p>
+        </div>
+
+        <div id="drop-zone">
+            <h2>Drag & Drop BVH File Here</h2>
+            <p>Or click to browse your <code>clean/bvh/</code> folder</p>
+            <button class="btn" style="padding: 10px 24px; font-size: 1rem;">Choose File</button>
+        </div>
+    </div>
+
+    <div id="bottom-bar">
+        <button id="btn-play" class="btn btn-outline" style="width: 70px;">Play</button>
+        <input type="range" id="timeline" min="0" max="100" value="0">
+        <div id="time-display">0:00 / 0:00</div>
+        <select id="speed-select" class="select-list">
+            <option value="0.25">0.25x</option>
+            <option value="0.5">0.5x</option>
+            <option value="1.0" selected>1.0x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2.0">2.0x</option>
+        </select>
+    </div>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        import { BVHLoader } from 'three/addons/loaders/BVHLoader.js';
+
+        let scene, camera, renderer, controls;
+        let mixer, skeletonHelper;
+        let clock = new THREE.Clock();
+        let gridHelper;
+        let currentAction = null;
+        let isPlaying = false;
+        let duration = 0;
+
+        const container = document.getElementById('canvas-container');
+        const fileInput = document.getElementById('file-input');
+        const dropZone = document.getElementById('drop-zone');
+        const btnPlay = document.getElementById('btn-play');
+        const timeline = document.getElementById('timeline');
+        const timeDisplay = document.getElementById('time-display');
+        const speedSelect = document.getElementById('speed-select');
+        const btnToggleGrid = document.getElementById('btn-toggle-grid');
+        const btnResetCam = document.getElementById('btn-reset-cam');
+        const motionTitle = document.getElementById('motion-title');
+        const motionStats = document.getElementById('motion-stats');
+
+        init();
+        animate();
+
+        function init() {
+            // Scene
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x0f172a);
+            scene.fog = new THREE.FogExp2(0x0f172a, 0.003);
+
+            // Camera
+            camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 1, 3000);
+            camera.position.set(0, 100, 300);
+
+            // Lights
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+            scene.add(ambientLight);
+
+            const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
+            dirLight.position.set(100, 200, 100);
+            scene.add(dirLight);
+
+            // Grid
+            gridHelper = new THREE.GridHelper(500, 50, 0x38bdf8, 0x334155);
+            gridHelper.position.y = 0;
+            scene.add(gridHelper);
+
+            // Renderer
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            container.appendChild(renderer.domElement);
+
+            // Controls
+            controls = new OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.target.set(0, 50, 0);
+
+            // Events
+            window.addEventListener('resize', onWindowResize);
+
+            fileInput.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) loadBVHFile(e.target.files[0]);
+            });
+
+            dropZone.addEventListener('click', () => fileInput.click());
+            dropZone.addEventListener('dragover', (e) => e.preventDefault());
+            dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                if (e.dataTransfer.files.length > 0) loadBVHFile(e.dataTransfer.files[0]);
+            });
+
+            btnPlay.addEventListener('click', togglePlay);
+
+            timeline.addEventListener('input', () => {
+                if (currentAction && mixer) {
+                    const targetTime = (timeline.value / 100) * duration;
+                    currentAction.time = targetTime;
+                    mixer.update(0);
+                    updateTimeDisplay();
+                }
+            });
+
+            speedSelect.addEventListener('change', (e) => {
+                if (mixer) mixer.timeScale = parseFloat(e.target.value);
+            });
+
+            btnToggleGrid.addEventListener('click', () => {
+                gridHelper.visible = !gridHelper.visible;
+            });
+
+            btnResetCam.addEventListener('click', () => {
+                camera.position.set(0, 100, 300);
+                controls.target.set(0, 50, 0);
+            });
+        }
+
+        function loadBVHFile(file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const contents = e.target.result;
+                const loader = new BVHLoader();
+                const result = loader.parse(contents);
+
+                if (skeletonHelper) scene.remove(skeletonHelper);
+                if (mixer) mixer.stopAllAction();
+
+                const boneContainer = new THREE.Group();
+                boneContainer.add(result.skeleton.bones[0]);
+                scene.add(boneContainer);
+
+                skeletonHelper = new THREE.SkeletonHelper(result.skeleton.bones[0]);
+                skeletonHelper.skeleton = result.skeleton;
+                skeletonHelper.material.linewidth = 3;
+                scene.add(skeletonHelper);
+
+                // Play animation
+                mixer = new THREE.AnimationMixer(skeletonHelper);
+                currentAction = mixer.clipAction(result.clip);
+                currentAction.setEffectiveWeight(1.0);
+                currentAction.play();
+
+                duration = result.clip.duration;
+                isPlaying = true;
+                btnPlay.textContent = 'Pause';
+                dropZone.classList.add('hidden');
+
+                motionTitle.textContent = file.name;
+                motionStats.innerHTML = `
+                    <b>Duration:</b> ${duration.toFixed(2)}s<br>
+                    <b>Tracks:</b> ${result.clip.tracks.length}<br>
+                    <b>Bones:</b> ${result.skeleton.bones.length} joints
+                `;
+
+                // Adjust camera target
+                controls.target.set(0, 40, 0);
+            };
+            reader.readAsText(file);
+        }
+
+        function togglePlay() {
+            if (!currentAction) return;
+            isPlaying = !isPlaying;
+            if (isPlaying) {
+                currentAction.paused = false;
+                btnPlay.textContent = 'Pause';
+            } else {
+                currentAction.paused = true;
+                btnPlay.textContent = 'Play';
+            }
+        }
+
+        function updateTimeDisplay() {
+            if (!currentAction) return;
+            const cur = currentAction.time % duration;
+            timeline.value = (cur / duration) * 100;
+            timeDisplay.textContent = `${cur.toFixed(2)}s / ${duration.toFixed(2)}s`;
+        }
+
+        function onWindowResize() {
+            camera.aspect = container.clientWidth / container.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            const delta = clock.getDelta();
+
+            if (mixer && isPlaying) {
+                mixer.update(delta);
+                updateTimeDisplay();
+            }
+
+            controls.update();
+            renderer.render(scene, camera);
+        }
+    </script>
+</body>
+</html>

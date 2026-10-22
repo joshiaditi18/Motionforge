@@ -1,0 +1,73 @@
+{
+  "status": "CALIBRATED_PHASE3",
+  "dataset_split": {
+    "training_count": 21,
+    "testing_count": 9,
+    "total_motions": 30
+  },
+  "task_1_denoising": {
+    "normalizers": {
+      "mpjpe_tau": 0.3695,
+      "velocity_tau": 22.7014,
+      "jitter_tau": 3079.72
+    },
+    "intra_task_weights": {
+      "mpjpe": 0.4,
+      "velocity": 0.3,
+      "jitter": 0.3
+    },
+    "baseline_median_scores": {
+      "LOW": 60.4,
+      "MEDIUM": 40.0,
+      "HIGH": 15.0
+    }
+  },
+  "task_2_gap_filling": {
+    "normalizers": {
+      "inpainting_tau": 0.0805,
+      "boundary_tau": 0.3615,
+      "v_boundary_tau": 5.0421,
+      "foot_contact_velocity_threshold_inch_per_sec": 0.907
+    },
+    "intra_task_weights": {
+      "inpainting_mpjpe": 0.5,
+      "boundary_continuity": 0.25,
+      "velocity_continuity": 0.25
+    },
+    "baseline_median_scores": {
+      "SHORT": 51.81,
+      "MEDIUM": 62.78,
+      "LONG": 12.5
+    }
+  },
+  "task_3_retargeting": {
+    "normalizers": {
+      "end_effector_tau": 0.0273,
+      "angular_tau_deg": 5.0,
+      "ground_penetration_tau": 0.5
+    },
+    "intra_task_weights": {
+      "end_effector": 0.45,
+      "angular_fidelity": 0.35,
+      "ground_penetration": 0.2
+    },
+    "baseline_median_scores": {
+      "target_small": 43.24,
+      "target_medium": 66.76,
+      "target_tall": 68.33
+    }
+  },
+  "competition_weights": {
+    "task_1_denoising": 0.3,
+    "task_2_gap_filling": 0.3,
+    "task_3_retargeting": 0.4
+  },
+  "runtime_constraints": {
+    "timeout_seconds": 300,
+    "single_file_timeout_seconds": 30,
+    "memory_limit_mb": 4096,
+    "max_archive_size_mb": 100,
+    "observed_max_time_per_file_sec": 7.3443,
+    "observed_max_peak_ram_mb": 55.56
+  }
+}

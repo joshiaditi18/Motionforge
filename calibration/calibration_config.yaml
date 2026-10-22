@@ -1,0 +1,30 @@
+competition:
+  name: MOTIONFORGE
+  phase: PHASE_3_CALIBRATED
+  random_seed: 2026
+scoring:
+  weights:
+    denoising: 0.3
+    gap_filling: 0.3
+    retargeting: 0.4
+  normalization:
+    method: exponential_decay
+    mpjpe_tau: 0.3695
+    velocity_tau: 22.7014
+    jitter_tau: 3079.72
+    inpainting_tau: 0.0805
+    boundary_tau: 0.3615
+    v_boundary_tau: 5.0421
+    end_effector_tau: 0.0273
+    angular_tau: 5.0
+    ground_penetration_tau: 0.5
+    foot_contact_velocity_threshold: 0.907
+runtime:
+  timeout_seconds: 300
+  memory_limit_mb: 4096
+  max_archive_size_mb: 100
+  network_access: false
+  sandboxed: true
+submission:
+  max_daily_attempts: 5
+  leaderboard_selection: BEST

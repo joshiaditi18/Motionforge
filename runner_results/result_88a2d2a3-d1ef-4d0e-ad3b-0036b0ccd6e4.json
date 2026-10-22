@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "competition": "MOTIONFORGE",
+  "runner_version": "0.1.0",
+  "evaluator_version": "0.1.0",
+  "validator_version": "0.1.0",
+  "contract_version": "1.0.0",
+  "calibration_version": "phase3_calibrated_2026",
+  "job_id": "88a2d2a3-d1ef-4d0e-ad3b-0036b0ccd6e4",
+  "submission_id": "sub",
+  "job_status": "COMPLETED",
+  "validation_status": "VALID",
+  "overall_score": null,
+  "task_scores": {
+    "denoising": null,
+    "gap_filling": null,
+    "retargeting": null
+  },
+  "scoring_weights": {
+    "denoising": 0.3,
+    "gap_filling": 0.3,
+    "retargeting": 0.4
+  },
+  "metrics": {
+    "task1_denoising": {
+      "MF001": {
+        "status": "REJECTED",
+        "score": null,
+        "metrics": {},
+        "detail": {},
+        "error_message": "Structural validation failed: Motion data has 317 frames, expected predicted motion",
+        "runtime_seconds": 0.02547710000362713
+      }
+    },
+    "task2_gap_filling": {
+      "MF001_short": {
+        "status": "REJECTED",
+        "score": null,
+        "metrics": {},
+        "detail": {},
+        "error_message": "Structural validation failed: Motion data has 317 frames, expected predicted motion",
+        "runtime_seconds": 0.04658930000732653
+      },
+      "MF001_medium": {
+        "status": "REJECTED",
+        "score": null,
+        "metrics": {},
+        "detail": {},
+        "error_message": "Structural validation failed: Motion data has 317 frames, expected predicted motion",
+        "runtime_seconds": 0.04613940000126604
+      },
+      "MF001_long": {
+        "status": "REJECTED",
+        "score": null,
+        "metrics": {},
+        "detail": {},
+        "error_message": "Structural validation failed: Motion data has 317 frames, expected predicted motion",
+        "runtime_seconds": 0.03277049999451265
+      }
+    },
+    "task3_retargeting": {
+      "MF001_small": {
+        "status": "REJECTED",
+        "score": null,
+        "metrics": {},
+        "detail": {},
+        "error_message": "Structural validation failed: Motion data has 317 frames, expected predicted retargeted motion",
+        "runtime_seconds": 0.029148799992981367
+      },
+      "MF001_medium": {
+        "status": "REJECTED",
+        "score": null,
+        "metrics": {},
+        "detail": {},
+        "error_message": "Structural validation failed: Motion data has 317 frames, expected predicted retargeted motion",
+        "runtime_seconds": 0.03458989999489859
+      },
+      "MF001_tall": {
+        "status": "REJECTED",
+        "score": null,
+        "metrics": {},
+        "detail": {},
+        "error_message": "Structural validation failed: Motion data has 317 frames, expected predicted retargeted motion",
+        "runtime_seconds": 0.040682399994693696
+      }
+    }
+  },
+  "validation_errors": [],
+  "validation_checks": {
+    "archive": "PASS",
+    "security": "PASS",
+    "schema": "PASS",
+    "bvh": "PASS",
+    "skeleton": "PASS",
+    "motion": "PASS",
+    "task": "PASS"
+  },
+  "error_message": null,
+  "runtime_seconds": 0.9657,
+  "timestamps": {
+    "created_at": "2026-10-14T16:31:44.535435+00:00",
+    "started_at": "2026-10-14T16:31:44.535435+00:00",
+    "completed_at": "2026-10-14T16:31:45.499901+00:00"
+  },
+  "status_history": [
+    {
+      "from_status": null,
+      "to_status": "QUEUED",
+      "timestamp": "2026-10-14T16:31:44.535435+00:00",
+      "reason": "Job initialized and queued"
+    },
+    {
+      "from_status": "QUEUED",
+      "to_status": "VALIDATING",
+      "timestamp": "2026-10-14T16:31:44.535435+00:00",
+      "reason": "Initiating Phase 5 validation"
+    },
+    {
+      "from_status": "VALIDATING",
+      "to_status": "EVALUATING",
+      "timestamp": "2026-10-14T16:31:44.975187+00:00",
+      "reason": "Submission validated successfully. Proceeding to Phase 4 evaluation."
+    },
+    {
+      "from_status": "EVALUATING",
+      "to_status": "COMPLETED",
+      "timestamp": "2026-10-14T16:31:45.499901+00:00",
+      "reason": "Evaluation completed successfully"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,2 @@
+total_motions,total_frames,average_fps,average_duration_seconds,min_duration_seconds,max_duration_seconds,joint_count,num_noisy_files,num_gap_files,num_retargeted_files,total_competition_files
+30,54560,120.0,15.156,1.2,82.833,31,90,90,90,300

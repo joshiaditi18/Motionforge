@@ -1,0 +1,36 @@
+{
+  "dataset_name": "MOTIONFORGE",
+  "version": "1.0",
+  "source": "CMU Motion Capture Database",
+  "random_seed": 2026,
+  "motion_count": 30,
+  "formats": [
+    "BVH"
+  ],
+  "tasks": [
+    "denoising",
+    "gap_filling",
+    "retargeting"
+  ],
+  "statistics": {
+    "total_motions": 30,
+    "total_frames": 54560,
+    "average_fps": 120.0,
+    "average_duration_seconds": 15.156,
+    "min_duration_seconds": 1.2,
+    "max_duration_seconds": 82.833,
+    "joint_count": 31,
+    "total_channels": 96,
+    "root_joint": "Hips",
+    "noisy_files_count": 90,
+    "gap_files_count": 90,
+    "retargeted_files_count": 90,
+    "total_competition_files": 300
+  },
+  "splits": {
+    "training_percentage": 70,
+    "testing_percentage": 30,
+    "training_count": 21,
+    "testing_count": 9
+  }
+}
